@@ -7568,3 +7568,9 @@ a.ui-button:active {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.header-logo img{
+  width: 10px;
+  height: 20px;
+}
