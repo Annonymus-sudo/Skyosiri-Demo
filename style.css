@@ -737,7 +737,7 @@ label {
 }
 .header {
   position: fixed;
-  height: 100px;
+  height: 40px;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -751,7 +751,7 @@ label {
 }
 @media screen and (max-width: 1200px) {
   .header {
-    height: 70px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -808,12 +808,12 @@ label {
 }
 @media screen and (max-width: 1200px) {
   .header-logo {
-    width: 150px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 767px) {
   .header-logo {
-    width: 130px;
+    width: 10px;
   }
 }
 .header-logo svg {
