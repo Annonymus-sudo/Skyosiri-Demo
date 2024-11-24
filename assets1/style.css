@@ -1247,6 +1247,13 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   
   color: #101010;
 }
+/* Disable scrolling when menu is open */
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 
 /* Hide mobile menu by default */
 .header-nav-main {

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Farmi - Organic Farm Agriculture Template">
+    <meta name="description" content="Skyosiri - Organic Farm Agriculture Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Farmi - Organic Farm Agriculture Template</title>
+    <title>Skyosiri’s</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets1/img/favicon.png" type="image/x-icon">
@@ -505,14 +505,17 @@
     
     <script src="./wp-content/themes/skyo/assets/js/main.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const menuToggle = document.getElementById("menu-toggle");
-            const mobileMenu = document.getElementById("mobile-menu");
-    
-            menuToggle.addEventListener("click", () => {
-                mobileMenu.classList.toggle("active");
-            });
-        });
+     document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const body = document.body;
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+        body.classList.toggle("no-scroll");
+    });
+});
+
     </script>
 
 </body>
