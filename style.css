@@ -303,6 +303,18 @@ ul {
   height: 20px;
 } */
 
+/* Base style for the div */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly enlarges the div */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+
 @media screen and (max-width: 1600px) {
   .h0 {
     font-size: 65px;

@@ -482,6 +482,31 @@
             line-height: 1.6;
         }
     </style>
+   <style>
+    /* Base style for the div */
+    .hover-effect {
+        border-radius: 10px 10px;
+        display: inline-block; /* Ensure the element adjusts to its content size */
+        overflow: hidden; /* Ensures no overflow when zooming */
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+
+    /* Zoom effect for the image */
+    .hover-effect img {
+        display: block;
+        width: 250px;
+        height: 12rem;
+        transition: transform 0.3s ease; /* Smooth zoom-in effect for the image */
+    }
+
+    /* Hover effect: Zoom in */
+    .hover-effect:hover img {
+        transform: scale(1.1); /* Zoom in slightly */
+    }
+    .hover-effect-slider{
+        border-radius: 10px;
+    }
+</style>
     <link rel='stylesheet' id='wp-components-css' href='../wp-includes/css/dist/components/style.min.css?ver=6.5.5'
         type='text/css' media='all'>
     <link rel='stylesheet' id='godaddy-styles-css'
@@ -643,17 +668,21 @@
             </div>
 
             <div class="horizontal-collage" data-scrollax-parent="true">
-                <div class="horizontal-collage-item" data-scrollax="properties: { 'translateY': '-10vw' }">
-                    <img src="../wp-content/themes/skyo/assets/images/home/g10.jpeg" alt="" style="width:250px; height:12rem;">
+                <div class="horizontal-collage-item hover-effect" data-scrollax="properties: { 'translateY': '-10vw' }">
+                    <img src="../wp-content/themes/skyo/assets/images/NEW/pappaya.JPG" alt="" style="width:250px; height:12rem;">
                 </div>
-                <div class="horizontal-collage-item" data-scrollax="properties: { 'translateY': '-5vw' }">
-                    <img src="../wp-content/themes/skyo/assets/images/home/g8.jpeg" alt="" style="width:250px; height:12rem;">
+                
+                <div class="horizontal-collage-item hover-effect" data-scrollax="properties: { 'translateY': '-5vw' }">
+                    <img src="../wp-content/themes/skyo/assets/images/NEW/nu.JPG" alt="" style="width:250px; height:12rem;">
+
                 </div>
-                <div class="horizontal-collage-item" data-scrollax="properties: { 'translateY': '2vw' }">
-                    <img src="../wp-content/themes/skyo/assets/images/home/abouts.jpeg" alt="" style="width:280px; height:12rem;">
+                <div class="horizontal-collage-item hover-effect" data-scrollax="properties: { 'translateY': '2vw' }">
+                    <img src="../wp-content/themes/skyo/assets/images/NEW/duck.JPG" alt="" style="width:250px; height:12rem;">
+
                 </div>
-                <div class="horizontal-collage-item" data-scrollax="properties: { 'translateY': '-3vw' }">
-                    <img src="../wp-content/themes/skyo/assets/images/home/g7.jpeg" alt="" style="width:250px; height:12rem;">
+                <div class="horizontal-collage-item hover-effect" data-scrollax="properties: { 'translateY': '-3vw' }">
+                    <img src="../wp-content/themes/skyo/assets/images/NEW/chess.JPG" alt="" style="width:280px; height:12rem;">
+
                 </div>
             </div>
 
@@ -679,8 +708,8 @@
 
                     <div class="split-slider-img">
 
-                        <div class="split-slider-img-item">
-                            <img src="../wp-content/themes/skyo/assets/images/home/sustain.jpeg" alt=""
+                        <div class="split-slider-img-item hover-effect-slider">
+                            <img src="../wp-content/themes/skyo/assets/images/NEW/sustain1.JPG" alt=""
                                 style="width: 500px; height: 40rem;">
                         </div>
                         <div class="split-slider-img-item">
@@ -688,7 +717,7 @@
                                 style="width: 500px; height: 40rem;">
                         </div>
                         <div class="split-slider-img-item">
-                            <img src="../wp-content/themes/skyo/assets/images/home/about1.jpeg" alt=""
+                            <img src="../wp-content/themes/skyo/assets/images//NEW/community.JPG" alt=""
                                 style="width: 500px; height: 40rem;">
                         </div>
 
